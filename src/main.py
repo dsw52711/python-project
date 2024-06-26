@@ -1,7 +1,7 @@
 import argparse
+import numpy as np
 import os
 from PIL import Image
-import numpy as np
 
 
 def process_gray(file_path, image):
