@@ -7,7 +7,7 @@
 
 ## Wymagania
 - Python 3.x
-- Biblioteki Python: `argparse`
+- Biblioteki Python: `argparse`, `numpy`, `pillow`
 
 ## Instalacja
 ```sh
