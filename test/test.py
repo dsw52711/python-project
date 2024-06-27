@@ -25,12 +25,12 @@ class TestImageProcessing(unittest.TestCase):
       blu_img = Image.new('RGB', (width, height))
 
       for x in range(width):
+         px = x*pi*2/width
          for y in range(height):
-            px = x*pi*2/width
             py = y*pi*2/height
-            r = int((cos(py)*-sin(px)+1)*127)
-            g = int((cos(py+1.5*pi)*-sin(px)+1)*127)
-            b = int((1-cos(px))*127)
+            r = int(127*(1-sin(px)*cos(py)))
+            g = int(127*(1-sin(px)*sin(py)))
+            b = int(127*(1-cos(px)))
 
             dark_img.putpixel((x, y), (r//10, g//10, b//10))
             gray_img.putpixel((x, y), (r, g, b))

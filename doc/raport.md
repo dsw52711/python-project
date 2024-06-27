@@ -1,0 +1,6 @@
+1. Stwierdziłem że wrzucanie wszysykich projektów szkolnych na glowne konto github wydaje sie nieodpowiednie więc postanowiłem zrobić nowe specjalnie dla nich. Przełączenie kont github w VSCode było trywialne.
+1. Plik readme został napisany czerpiąc inspirację z [bottom](https://github.com/ClementTsang/bottom) (świetny monitor zasobów, polecam). Chciałem dodać śmieszne CSS injection bo pamiętam że [coś takiego niedawno miało miejsce](https://dev.to/sh20raj/css-injection-on-github-what-happened-and-how-to-stay-safe-j2h), ale niestety okazało się że github już to naprawił.
+1. Plik `main.py` został stworzony tak, aby był (stosunkowo) szybki, wykorzystując pewne funkcje `numpy` zamiast robić wszystko ręcznie. Mógłbym przyspieszyć go jeszcze bardziej gdybym dodał multithreading, ale to raczej poza zakresem projektu. Wiem też że mógłbym użyć `glob` do plików w katalogach, ale to sie wadawało średnie.
+1. Pisanie testów jest dziwne. Czemu używają camelCase zamiast snake_case??? bezsens. jako obrazy testowe chciałem użyć ładnego gradientu z [filmu na YouTube o fraktalu podwójnego wahadła](https://youtu.be/n7JK4Ht8k8M?t=64), wyizolować i odtworzyć każdy kanał RGB, okazało sie że to po prostu koordynaty sferyczne.
+
+Podsumowując wolałbym to napisać w rust.
